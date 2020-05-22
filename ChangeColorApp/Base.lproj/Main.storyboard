@@ -79,12 +79,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-sM-FfI">
                                                 <rect key="frame" x="-2" y="0.0" width="253" height="31"/>
+                                                <connections>
+                                                    <action selector="setRedValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="7Tq-Wf-Gfm"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="liI-nm-V4l">
                                                 <rect key="frame" x="-2" y="32" width="253" height="29"/>
+                                                <connections>
+                                                    <action selector="setGreenValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="aVN-Yj-3Mz"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-6x-LAf">
                                                 <rect key="frame" x="-2" y="62" width="253" height="31"/>
+                                                <connections>
+                                                    <action selector="setBlueValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="G1g-sD-5S0"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -94,7 +103,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BZ1-WD-Ghp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N9E-JU-Saq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yqX-iW-cvi" secondAttribute="trailing" constant="16" id="NfY-5Q-FBe"/>
@@ -106,6 +115,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueValueLabel" destination="391-Ed-wZ6" id="6Yo-sq-13e"/>
+                        <outlet property="blueValueSlider" destination="GAG-6x-LAf" id="unR-Ls-d1h"/>
+                        <outlet property="colorViewForm" destination="BZ1-WD-Ghp" id="esB-gc-HhM"/>
+                        <outlet property="greenValueLabel" destination="MKa-sS-EkA" id="znI-P4-jHO"/>
+                        <outlet property="greenValueSlider" destination="liI-nm-V4l" id="aEF-jP-WhI"/>
+                        <outlet property="redValueLabel" destination="dmZ-Jc-s9v" id="pio-nw-Xf3"/>
+                        <outlet property="redValueSlider" destination="xeJ-sM-FfI" id="7gJ-Vc-o8m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
