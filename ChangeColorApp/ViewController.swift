@@ -32,12 +32,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setRedValueSlider() {
+        redValueLabel.text = String(format: "%.2f", redValueSlider.value)
     }
     
     @IBAction func setGreenValueSlider() {
+        greenValueLabel.text = String(format: "%.2f", greenValueSlider.value)
     }
     
     @IBAction func setBlueValueSlider() {
+        blueValueLabel.text = String(format: "%.2f", blueValueSlider.value)
     }
     
 }
