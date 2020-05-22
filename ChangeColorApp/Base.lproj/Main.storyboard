@@ -77,7 +77,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="foN-7c-Dbw">
                                         <rect key="frame" x="95.5" y="0.0" width="247.5" height="92"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-sM-FfI">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-sM-FfI">
                                                 <rect key="frame" x="-2" y="0.0" width="251.5" height="31"/>
                                                 <connections>
                                                     <action selector="setRedValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="7Tq-Wf-Gfm"/>
@@ -89,7 +89,7 @@
                                                     <action selector="setGreenValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="aVN-Yj-3Mz"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-6x-LAf">
+                                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GAG-6x-LAf">
                                                 <rect key="frame" x="-2" y="62" width="251.5" height="31"/>
                                                 <connections>
                                                     <action selector="setBlueValueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="G1g-sD-5S0"/>
